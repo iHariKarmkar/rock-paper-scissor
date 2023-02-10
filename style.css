@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Nunito', sans-serif;
+    background-color: #051923;
+    color: rgb(169, 223, 255);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 50vw;
+    background-color: rgba(87, 74, 226, 0.4);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    margin: 10px 0;
+}
+
+.game-options {
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all .3s;
+}
+
+.option-div:hover {
+    transform: scale(1.05);
+}
+
+.icons {
+    font-size: 48px;
+}
+
+.scissor .icons {
+    transform: rotate(90deg);
+}
+
+.result-div {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 325px;
+    padding: 10px 0;
+    margin: 5px auto;
+    border-radius: 4px;
+    display: none;
+}
+
+.selection {
+    color: #e86e1c;
+    text-transform: uppercase;
+}
+
+.result {
+    color: #ae4905;
+    /* color: #0fc60f; */
+}
